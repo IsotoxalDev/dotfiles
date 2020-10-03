@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/usr/bin:$HOME/Applications/code/bin:$HOME/.premake:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/bin:$HOME/Applications/.bin/6cord:$HOME/.bin:$HOME/.local/bin:$HOME/.emacs.d/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/abhinav/.oh-my-zsh"
@@ -11,7 +11,9 @@ export ZSH="/home/abhinav/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 #autorun stuff
-pfetch
+/opt/shell-color-scripts/colorscript.sh random
+LANG=en_US.UTF-8
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -141,7 +143,7 @@ alias cls="clear"
 #Config File alias
 alias zshconfig="nvim ~/.zshrc"
 alias qtilecfg="nvim ~/.config/qtile/config.py"
-
+alias nvimcfg="nvim ~/.config/nvim/init.vim"
 #doas alias
 alias doas="doas --"
 
@@ -161,3 +163,6 @@ alias get="git clone"
 #pacman and yay
 alias pac="doas  pacman" #short for pacman
 alias update="doas  pacman -Syu;yay -Sua --noconfirm;yay -Syu --noconfirm" #update all packages
+
+#godot alias
+alias godot="LANG=en_US.UTF-8 ~/.bin/Godot.64 &"
