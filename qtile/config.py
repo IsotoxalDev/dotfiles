@@ -32,7 +32,7 @@ from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
 mod = "mod4"
-terminal = "terminator"
+terminal = "alacritty"
 home = os.path.expanduser('~')
 
 @hook.subscribe.startup_once
@@ -76,7 +76,7 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown qtile"),
     Key([mod], "r", lazy.spawncmd(),
         desc="Spawn a command using a prompt widget"),
-    Key([mod, "control"], "m", lazy.spawn(home + "/.config/rofi/launchers/launcher.sh"), desc="Launcher"),
+    Key([mod, "control"], "space", lazy.spawn("rofi -show drun"), desc="Rofi"),
     Key([mod, "control"], "g", lazy.spawn(home + "/Applications/Godot/Godot.64"), desc="Godot"),
     Key([mod, "control"], "c", lazy.spawn(home + "/Applications/code/bin/code"), desc="VSCODE"),
     Key([mod, "control"], "Right", lazy.screen.next_group(), desc="Move To Next Window"),
@@ -86,11 +86,11 @@ keys = [
 groupNames = [("Terminal", {}),
         ("Web", {}),
         ("Dev", {}),
-        ("Aseprite", {}),
-        ("Vector Art", {}),
+        ("Art", {}),
+        ("Videos", {}),
+        ("Music", {}),
         ("Discord", {}),
         ("Game", {}),
-        ("Music", {}),
         ("Other", {})]
 groups = [Group(name, **kwargs) for name, kwargs in groupNames]
 
@@ -110,6 +110,7 @@ layouts = [
      #layout.Matrix(),
      layout.MonadTall(border_focus="#2ABB9C",border_width = 5),
      layout.Max(),
+     layout.Floating(),
      #layout.MonadWide(),
      #layout.RatioTile(),
      #layout.Tile(),

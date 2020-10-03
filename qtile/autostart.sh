@@ -2,4 +2,4 @@
 picom &
 nitrogen --restore &
 urxvtd -q -o -f &
-
+flameshot &
