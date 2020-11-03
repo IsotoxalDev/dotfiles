@@ -1,0 +1,1 @@
+/home/abhinav/.local/share/omf/themes/robbyrussell/fish_prompt.fish

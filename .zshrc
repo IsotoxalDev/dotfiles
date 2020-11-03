@@ -85,11 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
- else
-   export EDITOR='mvim'
- fi
+export EDITOR='nvim'
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
@@ -161,8 +157,9 @@ alias .5="cd ../../../../.."
 alias get="git clone"
 
 #pacman and yay
-alias pac="doas  pacman" #short for pacman
-alias update="doas  pacman -Syu;yay -Sua --noconfirm;yay -Syu --noconfirm" #update all packages
+alias pac="sudo pacman" #short for pacman
+alias update="sudo pacman -Syu;yay -Sua --noconfirm;yay -Syu --noconfirm" #update all packages
 
 #godot alias
 alias godot="LANG=en_US.UTF-8 ~/.bin/Godot.64 &"
+if [ -e /home/abhinav/.nix-profile/etc/profile.d/nix.sh ]; then . /home/abhinav/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
