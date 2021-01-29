@@ -1,3 +1,2 @@
-set -gx PATH $PATH $HOME/.bin
-set -gx PATH $PATH $HOME/.flutter/bin
-set -gx PATH $PATH $HOME/.emacs.d/bin
+set -gx PATH $PATH $HOME/Apps/theme.sh/
+theme.sh gruvbox-dark

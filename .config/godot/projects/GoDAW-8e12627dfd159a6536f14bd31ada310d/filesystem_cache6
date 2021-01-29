@@ -1,0 +1,12 @@
+be5a452dd999bd920376c85c99f0f384
+::res://::1611646900
+default_bus_layout.tres::AudioBusLayout::1611503700::0::1::::<><>::
+Main.gd::GDScript::1611646739::0::1::::<>Control<>::res://util/scripts/synth_functions.gd
+Main.tscn::PackedScene::1611646739::0::1::::<><>::res://Main.gd<>res://util/theme/GoDAWTheme.tres<>res://wave.gd
+test.wav::AudioStreamSample::1611646745::1611646779::1::::<><>::
+wave.gd::GDScript::1611642215::0::1::::<>Control<>::
+::res://util/::1611503700
+::res://util/scripts/::1611642203
+synth_functions.gd::GDScript::1611642203::0::1::::<>Object<>::
+::res://util/theme/::1611643686
+GoDAWTheme.tres::Theme::1611643686::0::1::::<><>::

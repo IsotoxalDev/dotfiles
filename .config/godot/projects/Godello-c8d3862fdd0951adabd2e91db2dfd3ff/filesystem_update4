@@ -1,0 +1,6 @@
+res://assets/theme_trello_default.tres
+res://default_env.tres
+res://scenes/MainScene.tscn
+res://scripts/Board.gd
+res://scripts/Card.gd
+res://scripts/MainScene.gd

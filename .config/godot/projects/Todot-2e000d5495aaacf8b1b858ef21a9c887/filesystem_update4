@@ -1,0 +1,9 @@
+res://addons/Todot/Src/Scenes/Checklist.tscn
+res://addons/Todot/Src/Scenes/List.tscn
+res://addons/Todot/Src/Scenes/Todo.tscn
+res://addons/Todot/Src/Scenes/TodoPopup.tscn
+res://addons/Todot/Src/Scripts/Todo.gd
+res://addons/Todot/Src/Scripts/TodoPopup.gd
+res://addons/Todot/Todot.tres
+res://addons/Todot/Todot.tscn
+res://default_env.tres
