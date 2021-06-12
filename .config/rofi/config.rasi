@@ -15,14 +15,16 @@ configuration {
 
 // black version
 * {
-  bg: #000000dd;
-  fg: #111111ff;
-  ac: #121212ff;
+  bg: #1d2021dd;
+  fg: #ebdbb2;
+  ac: #282828ff;
+  titlebg: #1d2021ff;
+  transparent: #00000000;
 }
 
 * {
-  background-color: rgba(0,0,0,0);
-  font: "Mononoki Nerd Font 12";
+  background-color: @transparent;
+  font: "Monofur Nerd Font Mono 12";
 }
 
 window {
@@ -34,8 +36,6 @@ mainbox {
   margin: 25% 40% 25% 40%;
   background-color: @bg;
   border-radius: 5;
-  border: 0;
-  border-color: #ffffff0A;
 }
 
 listview {
@@ -46,7 +46,7 @@ listview {
 
 element {
   border: 0;
-  text-color: #ffffff;
+  text-color: @fg;
   orientation: vertical;
   padding: 8 12 8 12;
   border-radius: 5;
@@ -55,7 +55,7 @@ element {
 element selected {
   background-color: @ac;
   border-color: #ffffff;
-  text-color: #ffffff;
+  text-color: @fg;
   transition: 50;
 }
 
@@ -80,7 +80,7 @@ element-text {
 inputbar {
   children: [entry];
   padding: 4 8 4 8;
-  background-color: @fg;
+  background-color: @titlebg;
   border: 0 0 1 0;
   border-color: @fg;
 }
@@ -90,6 +90,6 @@ prompt {
 }
 
 entry {
-  text-color: #ffffff;
+  text-color: @fg;
   padding: 8 12 8 12;
 }
